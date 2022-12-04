@@ -3,6 +3,7 @@
 #include<sstream>
 #include<algorithm>
 #include<memory>
+#include<limits>
 
 using namespace std;
 
@@ -47,6 +48,32 @@ namespace Util{
 
 
 int main( int argc, char** argv ){
-    
+    int n;
+    {
+        std::string str1;
+        std::getline( cin, str1 );
+        n = std::atoi( str1.c_str() );
+    }
+
+    std::vector<int> nums( n );
+    {
+        std::string str2;
+        std::getline( cin, str2 );
+        Util::StrVec sv = Util::split( str2 );
+        for( int i = 0; i < n; i++ ) nums[i] = std::atoi( sv[i].c_str() );
+    }
+
+    cout << nums.size() << endl;
+
+    int sum = 0, min = 20, max = 0;
+    for( int i = 0; i <n; i++ ){
+        sum += nums[i];
+        if( nums[i] > max ) max = nums[i];
+        if( nums[i] < min ) min = nums[i];
+    }
+
+    cout << "Sum: " << sum << endl;
+    cout << "Min: " << min << endl;
+    cout << "Max: " << max << endl;
 return 0;
 }

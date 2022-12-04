@@ -49,8 +49,8 @@ Max: MAX
 
 ```
 Sum: 54
-Min: 11
-Max: 3
+Min: 3
+Max: 11
 ```
 
 ※ Inputs 1 は input1.txt, Output 1 は output1.txt に記述されているとする。
