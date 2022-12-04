@@ -63,9 +63,7 @@ int main( int argc, char** argv ){
         for( int i = 0; i < n; i++ ) nums[i] = std::atoi( sv[i].c_str() );
     }
 
-    cout << nums.size() << endl;
-
-    int sum = 0, min = 20, max = 0;
+    int sum = 0, min = 100, max = 0;
     for( int i = 0; i <n; i++ ){
         sum += nums[i];
         if( nums[i] > max ) max = nums[i];
