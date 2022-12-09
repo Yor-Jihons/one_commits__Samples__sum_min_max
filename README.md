@@ -5,6 +5,7 @@ This is a sample so that I can commit this to the GitHub.
 ## 1. Question
 
 項数Nの数列anが与えられる。この数列anの合計値と最小値及び最大値をそれぞれ計算し出力するプログラムを組め。
+ただし異常系については考慮しないものとする。
 
 ## 2. Conditions
 
