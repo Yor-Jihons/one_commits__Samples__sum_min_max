@@ -1,4 +1,4 @@
-# one_commits__Samples__rock-paper-scissors_game
+# one_commits__Samples__sum_min_max
 
 This is a sample so that I can commit this to the GitHub.
 
